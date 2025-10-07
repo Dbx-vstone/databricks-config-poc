@@ -31,5 +31,5 @@ jobs:
 
       - name: Upload JSON to Databricks Volume
         run: |
-          databricks fs cp config/job_config.json /Volumes/vishal-catalog/default/k2_test_volume/job_config.json --overwrite
+          databricks fs cp config/job_config.json dbfs:/Volumes/vishal-catalog/default/k2_test_volume/job_config.json --overwrite
           # Add lines for more files if needed
