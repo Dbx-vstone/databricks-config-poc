@@ -3,9 +3,9 @@ name: Deploy Databricks Config
 on:
   push:
     branches:
-      - main  # Change to your branch if needed
+      - main
     paths:
-      - 'config/**'  # Triggers only on config changes
+      - 'config/**'
 
 jobs:
   deploy:
@@ -32,4 +32,3 @@ jobs:
       - name: Upload JSON to Databricks Volume
         run: |
           databricks fs cp config/job_config.json dbfs:/Volumes/vishal-catalog/default/k2_test_volume/job_config.json --overwrite
-          # Add lines for more files if needed
