@@ -1,7 +1,7 @@
 {
   "job_name": "daily_sales_pipeline",
   "parameters": {
-    "min_quantity": 200,
+    "min_quantity": 150,
     "input_table": "purchase_order_vstone.test.data",
     "output_table": "purchase_order_vstone.test.filtered_sales"
   }
